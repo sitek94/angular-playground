@@ -13,7 +13,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     BrowserModule,
     RouterModule.forRoot([
       { path: 'first-lesson', component: FirstLessonComponent },
-      { path: '', component: HomeComponent },
+      { path: 'home', component: HomeComponent },
+      { path: '', redirectTo: '/home', pathMatch: 'full' },
     ]),
   ],
   providers: [],
