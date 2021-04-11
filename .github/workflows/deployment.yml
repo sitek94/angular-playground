@@ -1,6 +1,8 @@
-name: Build and Deploy
+name: Continuous Deployment
 
 on:
+  pull_request:
+    branches: [ main ]
   push:
     branches: [ main ]
     
@@ -15,6 +17,8 @@ jobs:
         with:
           node-version: '14.x'
       - run: npm ci
+      - run: npm run lint
+      - run: npm run test:ci
       - run: npm run build:prod
       - uses: w9jds/firebase-action@master
         with:
