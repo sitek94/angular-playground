@@ -8,7 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
-  declarations: [AppComponent, FirstLessonComponent, FirstLessonComponent, HomeComponent, NavbarComponent],
+  declarations: [AppComponent, FirstLessonComponent, HomeComponent, NavbarComponent],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
