@@ -1,10 +1,6 @@
 {
   "hosting": {
     "public": "dist/angular-playground",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   }
 }
