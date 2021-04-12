@@ -22,7 +22,7 @@ describe('HomeComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it(`should have as title 'angular-playground'`, () => {
+  it(`should have as title "Angular Playground"`, () => {
     const fixture = TestBed.createComponent(HomeComponent);
     const app = fixture.componentInstance;
     expect(app.title).toEqual('Angular Playground');
